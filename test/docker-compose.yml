@@ -234,7 +234,7 @@ services:
       - SUBNETWORK=Local Ethereum
       - COIN=ETH
       - ETHEREUM_JSONRPC_VARIANT=geth
-      - ETHEREUM_JSONRPC_HTTP_URL=http://x1-mock-l1-network:8545
+      - ETHEREUM_JSONRPC_HTTP_URL=https://sepolia.ryoshiresearch.com
       - DATABASE_URL=postgres://l1_explorer_user:l1_explorer_password@x1-explorer-l1-db:5432/l1_explorer_db
       - ECTO_USE_SSL=false
       - MIX_ENV=prod
@@ -267,7 +267,7 @@ services:
       - SUBNETWORK=Local X1
       - COIN=ETH
       - ETHEREUM_JSONRPC_VARIANT=geth
-      - ETHEREUM_JSONRPC_HTTP_URL=http://x1-explorer-json-rpc:8124
+      - ETHEREUM_JSONRPC_HTTP_URL=http://54.226.84.169:8123
       - DATABASE_URL=postgres://l2_explorer_user:l2_explorer_password@x1-explorer-l2-db:5432/l2_explorer_db
       - ECTO_USE_SSL=false
       - MIX_ENV=prod
@@ -576,7 +576,7 @@ services:
 
   x1-bridge-service:
     container_name: x1-bridge-service
-    image: okexchain/x1-bridge:e2e_v0.1.0_20231113
+    image: x1-bridge-service
     ports:
       - 8080:8080
       - 9096:9090
@@ -602,15 +602,15 @@ services:
     ports:
       - 8090:80
     environment:
-      - ETHEREUM_RPC_URL=http://127.0.0.1:8545
+      - ETHEREUM_RPC_URL=https://sepolia.ryoshiresearch.com
       - ETHEREUM_EXPLORER_URL=http://127.0.0.1:4000
-      - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0x10B65c586f795aF3eCCEe594fE4E38E1F059F780
+      - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0xaEB5133aDD4A529d6783BC81bDEADF2630c4507a
       - ETHEREUM_FORCE_UPDATE_GLOBAL_EXIT_ROOT=true
-      - ETHEREUM_PROOF_OF_EFFICIENCY_CONTRACT_ADDRESS=0x0D9088C72Cd4F08e9dDe474D8F5394147f64b22C
+      - ETHEREUM_PROOF_OF_EFFICIENCY_CONTRACT_ADDRESS=0xb5F2533829E1c5423eb85cFfC5e94aE10D7faDe3
       - POLYGON_ZK_EVM_RPC_URL=http://127.0.0.1:8123
       - POLYGON_ZK_EVM_EXPLORER_URL=http://127.0.0.1:4001
-      - POLYGON_ZK_EVM_BRIDGE_CONTRACT_ADDRESS=0x10B65c586f795aF3eCCEe594fE4E38E1F059F780
-      - POLYGON_ZK_EVM_NETWORK_ID=1
+      - POLYGON_ZK_EVM_BRIDGE_CONTRACT_ADDRESS=0xaEB5133aDD4A529d6783BC81bDEADF2630c4507a
+      - POLYGON_ZK_EVM_NETWORK_ID=11198111
       - BRIDGE_API_URL=http://127.0.0.1:8080
       - ENABLE_FIAT_EXCHANGE_RATES=false
       - ENABLE_OUTDATED_NETWORK_MODAL=false

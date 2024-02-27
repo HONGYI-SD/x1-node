@@ -15,16 +15,16 @@ TableSuffix = ""
 [ClaimTxManager]
 Enabled = true
 FrequencyToMonitorTxs = "1s"
-PrivateKey = {Path = "/pk/keystore.claimtxmanager", Password = "testonly"}
+PrivateKey = {Path = "/pk/keystore.claimtxmanager", Password = "135246"}
 RetryInterval = "1s"
 RetryNumber = 10
 FreeGas = true
 
 [Etherman]
-L1URL = "http://x1-mock-l1-network:8545"
-L2URLs = ["http://x1-json-rpc:8123"]
-L1ChainId = 5
-L2ChainIds = [1001]
+L1URL = "https://sepolia.ryoshiresearch.com"
+L2URLs = ["http://54.226.84.169:8123"]
+L1ChainId = 11155111
+L2ChainIds = [11198111]
 
 [Synchronizer]
 SyncInterval = "1s"
@@ -69,10 +69,10 @@ Password = ""
 RootCAPath = "/app/root-ca-cert"
 
 [NetworkConfig]
-GenBlockNumber = 1
-PolygonBridgeAddress = "0x10B65c586f795aF3eCCEe594fE4E38E1F059F780"
-PolygonZkEVMGlobalExitRootAddress = "0xEd236da21Ff62bC7B62608AdB818da49E8549fa7"
-L2PolygonBridgeAddresses = ["0x10B65c586f795aF3eCCEe594fE4E38E1F059F780"]
+GenBlockNumber = 5367840
+PolygonBridgeAddress = "0xaEB5133aDD4A529d6783BC81bDEADF2630c4507a"
+PolygonZkEVMGlobalExitRootAddress = "0x4D149fA2264f5E1F55690d9adCBDADe9F4c3b0d1"
+L2PolygonBridgeAddresses = ["0xaEB5133aDD4A529d6783BC81bDEADF2630c4507a"]
 
 [NacosConfig]
 NacosUrls = ""
