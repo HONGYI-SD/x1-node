@@ -23,7 +23,7 @@ MaxTxDataBytesSize=100000
 DefaultMinGasPriceAllowed = 1000000000
 MinAllowedGasPriceInterval = "5m"
 PollMinAllowedGasPriceInterval = "15s"
-FreeGasAddress = "0x19536e2a814f041662b44850eb2a045b837ca548"
+FreeGasAddress = "0xdc5711dd1b5feb2af756f5264734127592e25df4"
 	[Pool.DB]
 	User = "pool_user"
 	Password = "pool_password"
@@ -86,7 +86,7 @@ MaxTxLifetime = "3h"
 		ClosingSignalsManagerWaitForCheckingForcedBatches = "10s"
 		ForcedBatchesFinalityNumberOfBlocks = 0
 		TimestampResolution = "10s"
-		StopSequencerOnBatchNum = 10
+		StopSequencerOnBatchNum = 0
 	[Sequencer.DBManager]
 		PoolRetrievalInterval = "500ms"
 		L2ReorgRetrievalInterval = "5s"
@@ -98,12 +98,12 @@ MaxTxLifetime = "3h"
 		Enabled = false
 
 [SequenceSender]
-WaitPeriodSendSequence = "8m"
-LastBatchVirtualizationTimeMaxWaitPeriod = "8m"
+WaitPeriodSendSequence = "30m"
+LastBatchVirtualizationTimeMaxWaitPeriod = "5m"
 TraceBatchUseHTTPS = true
 MaxBatchesForL1 = 200
-SenderAddress = "0x19536e2a814f041662b44850eb2a045b837ca548"
-L2Coinbase = "0x19536e2a814f041662b44850eb2a045b837ca548"
+SenderAddress = "0xdc5711dd1b5feb2af756f5264734127592e25df4"
+L2Coinbase = "0xdc5711dd1b5feb2af756f5264734127592e25df4"
 ForkUpgradeBatchNumber = 5
 PrivateKey = {Path = "/pk/sequencer.keystore", Password = "135246"}
 UseValidium = true
@@ -116,7 +116,7 @@ VerifyProofInterval = "10s"
 TxProfitabilityCheckerType = "acceptall"
 TxProfitabilityMinReward = "1.1"
 ProofStatePollingInterval = "5s"
-SenderAddress = "0x4e2dd2a9349dd39f65fd6b4a3a79916fc43bcb11"
+SenderAddress = "0x08686126e2addce113e522bbeed96c17bfa8ebbf"
 CleanupLockedProofsInterval = "2m"
 GeneratingProofCleanupThreshold = "10m"
 FordId = 5
