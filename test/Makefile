@@ -512,7 +512,7 @@ run: ## Runs a full node
 	$(RUNEVENTDB)
 ##	$(RUNDACDB)
 	$(RUNBRIDGEDB)
-	$(RUNEXL1DB)
+##	$(RUNEXL1DB)
 	$(RUNEXL2DB)
 	$(RUNBRIDGEREDIS)
 ##	$(RUNL1NETWORK)
@@ -533,11 +533,11 @@ run: ## Runs a full node
 	sleep 5
 	$(RUNZOOKEEPER)
 	$(RUNKAFKA)
-	$(RUNEXPLORERL1)
+##	$(RUNEXPLORERL1)
 	$(RUNEXPLORERL2)
 	sleep 3
 	$(RUNBRIDGE)
-	$(RUNBRIDGEUI)
+##	$(RUNBRIDGEUI)
 
 .PHONY: stop
 stop: ## Stops all services
