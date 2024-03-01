@@ -513,7 +513,7 @@ run: ## Runs a full node
 ##	$(RUNDACDB)
 	$(RUNBRIDGEDB)
 ##	$(RUNEXL1DB)
-	$(RUNEXL2DB)
+##	$(RUNEXL2DB)
 	$(RUNBRIDGEREDIS)
 ##	$(RUNL1NETWORK)
 	sleep 1
@@ -534,7 +534,7 @@ run: ## Runs a full node
 	$(RUNZOOKEEPER)
 	$(RUNKAFKA)
 ##	$(RUNEXPLORERL1)
-	$(RUNEXPLORERL2)
+##	$(RUNEXPLORERL2)
 	sleep 3
 	$(RUNBRIDGE)
 ##	$(RUNBRIDGEUI)
