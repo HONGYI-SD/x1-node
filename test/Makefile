@@ -1,7 +1,7 @@
 DOCKERCOMPOSE := docker-compose -f docker-compose.yml
 DOCKERCOMPOSEAPPSEQ := ryoshi-sequencer
 DOCKERCOMPOSEAPPSEQSENDER := ryoshi-sequence-sender
-DOCKERCOMPOSEAPPL2GASP := x1-l2gaspricer
+DOCKERCOMPOSEAPPL2GASP := ryoshi-l2gaspricer
 DOCKERCOMPOSEAPPAGG := ryoshi-aggregator
 DOCKERCOMPOSEAPPRPC := ryoshi-json-rpc
 DOCKERCOMPOSEAPPSYNC := ryoshi-sync
@@ -517,7 +517,7 @@ run: ## Runs a full node
 	$(RUNBRIDGEREDIS)
 ##	$(RUNL1NETWORK)
 	sleep 1
-	$(RUNZKPROVER)
+##	$(RUNZKPROVER)
 ##	$(RUNAPPROVE)
 	sleep 3
 	$(RUNSYNC)
