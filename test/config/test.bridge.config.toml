@@ -69,10 +69,10 @@ Password = ""
 RootCAPath = "/app/root-ca-cert"
 
 [NetworkConfig]
-GenBlockNumber = 5391693
-PolygonBridgeAddress = "0x946B94D18c2497f1A2F3890a0DC6be3B180a99Be"
-PolygonZkEVMGlobalExitRootAddress = "0xdb01151903C14e497633e34a08D9C03c46624481"
-L2PolygonBridgeAddresses = ["0x946B94D18c2497f1A2F3890a0DC6be3B180a99Be"]
+GenBlockNumber = 5412439
+PolygonBridgeAddress = "0x4Ea077CB6eBFe8cE32c683d019876Db826e35510"
+PolygonZkEVMGlobalExitRootAddress = "0xE999A9Ef988Afaa1818bCdBbad3f8bc9Da3Fd26c"
+L2PolygonBridgeAddresses = ["0x4Ea077CB6eBFe8cE32c683d019876Db826e35510"]
 
 [NacosConfig]
 NacosUrls = ""
