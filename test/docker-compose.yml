@@ -34,7 +34,7 @@ services:
       - POSTGRES_DB=grafana
     depends_on:
       - grafana-db
-      - x1-json-rpc
+      - ryoshi-json-rpc
 
   grafana-db:
     container_name: grafana-db
