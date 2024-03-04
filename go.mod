@@ -25,7 +25,7 @@ require (
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.4
 	github.com/umbracle/ethgo v0.1.4-0.20230712173909-df37dddf16f0
-	github.com/urfave/cli/v2 v2.25.7
+	github.com/urfave/cli/v2 v2.27.1
 	go.uber.org/zap v1.24.0
 	golang.org/x/crypto v0.12.0
 	golang.org/x/net v0.12.0
