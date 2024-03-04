@@ -1,7 +1,7 @@
 version: "3.5"
 networks:
   default:
-    name: x1
+    name: ryoshi
     
 services:
   grafana:
@@ -518,8 +518,8 @@ services:
       - "-N"
       - "500"
       
-  x1-bridge-db:
-    container_name: x1-bridge-db
+  ryoshi-bridge-db:
+    container_name: ryoshi-bridge-db
     image: postgres
     deploy:
       resources:
@@ -535,8 +535,8 @@ services:
       - POSTGRES_DB=test_db
     command: ["postgres", "-N", "500"]
 
-  x1-bridge-redis:
-    container_name: x1-bridge-redis
+  ryoshi-bridge-redis:
+    container_name: ryoshi-bridge-redis
     image: redis
     deploy:
       resources:
@@ -561,9 +561,9 @@ services:
     expose:
       - 2181
 
-  x1-bridge-coin-kafka:
+  ryoshi-bridge-coin-kafka:
     image: wurstmeister/kafka
-    container_name: x1-bridge-coin-kafka
+    container_name: ryoshi-bridge-coin-kafka
     expose:
       - 9092
     environment:
@@ -574,8 +574,8 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: kafka-zookeeper:2181
       KAFKA_CREATE_TOPICS: "explorer_chainAddressPrice_push:1:1"
 
-  x1-bridge-service:
-    container_name: x1-bridge-service
+  ryoshi-bridge-service:
+    container_name: ryoshi-bridge-service
     image: x1-bridge-service
     ports:
       - 8080:8080
@@ -584,7 +584,7 @@ services:
       - ZKEVM_BRIDGE_DATABASE_USER=test_user
       - ZKEVM_BRIDGE_DATABASE_PASSWORD=test_password
       - ZKEVM_BRIDGE_DATABASE_NAME=test_db
-      - ZKEVM_BRIDGE_DATABASE_HOST=x1-bridge-db
+      - ZKEVM_BRIDGE_DATABASE_HOST=ryoshi-bridge-db
       - ZKEVM_BRIDGE_DATABASE_PORT=5432
     volumes:
       - ./sequencer.keystore:/pk/keystore.claimtxmanager
