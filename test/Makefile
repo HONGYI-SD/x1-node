@@ -26,7 +26,7 @@ DOCKERCOMPOSEZOOKEEPER := kafka-zookeeper
 DOCKERCOMPOSEKAFKA := ryoshi-bridge-coin-kafka
 DOCKERCOMPOSEBRIDGESERVICE := ryoshi-bridge-service
 DOCKERCOMPOSEBRIDGEUI := x1-bridge-ui
-DOCKERCOMPOSEZKPROVER := x1-prover
+DOCKERCOMPOSEZKPROVER := ryoshi-prover
 DOCKERCOMPOSEPERMISSIONLESSDB := x1-permissionless-db
 DOCKERCOMPOSEPERMISSIONLESSNODE := x1-permissionless-node
 DOCKERCOMPOSEPERMISSIONLESSNODEDAC := x1-permissionless-node-forced-DAC
@@ -505,8 +505,8 @@ run-approve-matic: ## Runs approve in node container
 stop-approve-matic: ## Stops approve in node container
 	$(STOPAPPROVE)
 
-.PHONY: run
-run: ## Runs a full node
+.PHONY: run1
+run1: ## Runs a full node
 	$(RUNSTATEDB)
 	$(RUNPOOLDB)
 	$(RUNEVENTDB)
@@ -517,8 +517,14 @@ run: ## Runs a full node
 	$(RUNBRIDGEREDIS)
 ##	$(RUNL1NETWORK)
 	sleep 1
-##	$(RUNZKPROVER)
+
+.PHONY: run2
+run2:
+	$(RUNZKPROVER)
 ##	$(RUNAPPROVE)
+
+.PHONY: run3
+run3:
 	sleep 3
 	$(RUNSYNC)
 	sleep 2

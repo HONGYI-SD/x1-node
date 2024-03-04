@@ -338,8 +338,8 @@ services:
       - "full"
       - "--rpc.allow-unprotected-txs"
 
-  x1-prover:
-    container_name: x1-prover
+  ryoshi-prover:
+    container_name: ryoshi-prover
     image: hermeznetwork/zkevm-prover:v2.2.0
     ports:
       # - 50051:50051 # Prover
@@ -576,7 +576,7 @@ services:
 
   ryoshi-bridge-service:
     container_name: ryoshi-bridge-service
-    image: x1-bridge-service
+    image: ryoshi-bridge-service
     ports:
       - 8080:8080
       - 9096:9090

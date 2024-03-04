@@ -22,7 +22,7 @@ FreeGas = true
 
 [Etherman]
 L1URL = "https://sepolia.ryoshiresearch.com"
-L2URLs = ["http://54.226.84.169:8123"]
+L2URLs = ["http://ryoshi-json-rpc:8123"]
 L1ChainId = 11155111
 L2ChainIds = [11198111]
 
@@ -60,9 +60,9 @@ SentinelConfigFilePath = "/app/sentinel_config.json"
     MockPrice = true
 
 [CoinKafkaConsumer]
-Brokers = ["x1-bridge-coin-kafka:9092"]
+Brokers = ["ryoshi-bridge-coin-kafka:9092"]
 Topics = ["explorer_chainAddressPrice_push"]
-ConsumerGroupID = "x1-bridge-service"
+ConsumerGroupID = "ryoshi-bridge-service"
 InitialOffset = -1
 Username = ""
 Password = ""
