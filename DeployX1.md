@@ -55,4 +55,9 @@ constants.ts中
 export const L1GASTOKEN_ADDRESS    = "0xcf41Fd1317CE3b7B04628548fCE038D7669cd521";// 为第一步部署erc20合约时产生的地址(详细说明)
 export const L2WRAPPERETH_ADDRESS  = "0x96C32B6250A191DD79D79b86A1EebaC0ABc7aDb9"; // 为genesis.json中WETHzkEVM的address
 ```
+# prover 分离模式下，node的启动命令
+1. make run1
+2. 等待prover启动
+3. make run3
+
 # 部署节点加入zkNode(todo)

@@ -23,7 +23,7 @@ MaxTxDataBytesSize=100000
 DefaultMinGasPriceAllowed = 1000000000
 MinAllowedGasPriceInterval = "5m"
 PollMinAllowedGasPriceInterval = "15s"
-FreeGasAddress = "0xc7237086a6aadc966927e960bad7b15040992991"
+FreeGasAddress = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
 	[Pool.DB]
 	User = "royshi_pool_user"
 	Password = "royshi_pool_password"
@@ -102,10 +102,10 @@ WaitPeriodSendSequence = "30m"
 LastBatchVirtualizationTimeMaxWaitPeriod = "5m"
 TraceBatchUseHTTPS = true
 MaxBatchesForL1 = 200
-SenderAddress = "0xc7237086a6aadc966927e960bad7b15040992991"
-L2Coinbase = "0xc7237086a6aadc966927e960bad7b15040992991"
+SenderAddress = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
+L2Coinbase = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
 ForkUpgradeBatchNumber = 5
-PrivateKey = {Path = "/pk/sequencer.keystore", Password = "135246"}
+PrivateKey = {Path = "/pk/sequencer.keystore", Password = "Royshi"}
 UseValidium = true
 
 [Aggregator]
@@ -116,7 +116,7 @@ VerifyProofInterval = "10s"
 TxProfitabilityCheckerType = "acceptall"
 TxProfitabilityMinReward = "1.1"
 ProofStatePollingInterval = "5s"
-SenderAddress = "0x23f30d9471e4f78ae1df2139f5af907ef0e8c7fb"
+SenderAddress = "0xfe1b79990d5039d333de626a319de6e9998b5688"
 CleanupLockedProofsInterval = "2m"
 GeneratingProofCleanupThreshold = "10m"
 FordId = 5
@@ -125,8 +125,8 @@ FordId = 5
 ForcedGas = 0
 GasPriceMarginFactor = 2
 PrivateKeys = [
-	{Path = "/pk/sequencer.keystore", Password = "135246"},
-	{Path = "/pk/aggregator.keystore", Password = "135246"}
+	{Path = "/pk/sequencer.keystore", Password = "Royshi"},
+	{Path = "/pk/aggregator.keystore", Password = "Royshi"}
 ]
 
 [L2GasPriceSuggester]

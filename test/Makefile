@@ -542,7 +542,7 @@ run3:
 ##	$(RUNEXPLORERL1)
 ##	$(RUNEXPLORERL2)
 	sleep 3
-	$(RUNBRIDGE)
+##	$(RUNBRIDGE)
 ##	$(RUNBRIDGEUI)
 
 .PHONY: stop
