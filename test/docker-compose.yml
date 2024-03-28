@@ -174,8 +174,8 @@ services:
     volumes:
       - ../db/scripts/init_prover_db.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
-      - POSTGRES_USER=royshi_state_user
-      - POSTGRES_PASSWORD=royshi_state_password
+      - POSTGRES_USER=ryoshi_state_user
+      - POSTGRES_PASSWORD=ryoshi_state_password
       - POSTGRES_DB=state_db
     command:
       - "postgres"
@@ -194,8 +194,8 @@ services:
     ports:
       - 5433:5432
     environment:
-      - POSTGRES_USER=royshi_pool_user
-      - POSTGRES_PASSWORD=royshi_pool_password
+      - POSTGRES_USER=ryoshi_pool_user
+      - POSTGRES_PASSWORD=ryoshi_pool_password
       - POSTGRES_DB=pool_db
     command:
       - "postgres"
@@ -216,8 +216,8 @@ services:
     volumes:
       - ../db/scripts/init_event_db.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
-      - POSTGRES_USER=royshi_event_user
-      - POSTGRES_PASSWORD=royshi_event_password
+      - POSTGRES_USER=ryoshi_event_user
+      - POSTGRES_PASSWORD=ryoshi_event_password
       - POSTGRES_DB=event_db
     command:
       - "postgres"
@@ -530,8 +530,8 @@ services:
     ports:
       - 5439:5432
     environment:
-      - POSTGRES_USER=royshi_test_user
-      - POSTGRES_PASSWORD=royshi_test_password
+      - POSTGRES_USER=ryoshi_test_user
+      - POSTGRES_PASSWORD=ryoshi_test_password
       - POSTGRES_DB=test_db
     command: ["postgres", "-N", "500"]
 

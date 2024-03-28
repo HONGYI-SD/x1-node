@@ -6,8 +6,8 @@ Level = "debug"
 Outputs = ["stderr"]
 
 [StateDB]
-User = "royshi_state_user"
-Password = "royshi_state_password"
+User = "ryoshi_state_user"
+Password = "ryoshi_state_password"
 Name = "state_db"
 Host = "ryoshi-state-db"
 Port = "5432"
@@ -25,8 +25,8 @@ MinAllowedGasPriceInterval = "5m"
 PollMinAllowedGasPriceInterval = "15s"
 FreeGasAddress = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
 	[Pool.DB]
-	User = "royshi_pool_user"
-	Password = "royshi_pool_password"
+	User = "ryoshi_pool_user"
+	Password = "ryoshi_pool_password"
 	Name = "pool_db"
 	Host = "ryoshi-pool-db"
 	Port = "5432"
@@ -105,7 +105,7 @@ MaxBatchesForL1 = 200
 SenderAddress = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
 L2Coinbase = "0x669cf5abd7991a6e24b32207ca4f0abb43685295"
 ForkUpgradeBatchNumber = 5
-PrivateKey = {Path = "/pk/sequencer.keystore", Password = "Royshi"}
+PrivateKey = {Path = "/pk/sequencer.keystore", Password = "Ryoshi"}
 UseValidium = true
 
 [Aggregator]
@@ -125,8 +125,8 @@ FordId = 5
 ForcedGas = 0
 GasPriceMarginFactor = 2
 PrivateKeys = [
-	{Path = "/pk/sequencer.keystore", Password = "Royshi"},
-	{Path = "/pk/aggregator.keystore", Password = "Royshi"}
+	{Path = "/pk/sequencer.keystore", Password = "Ryoshi"},
+	{Path = "/pk/aggregator.keystore", Password = "Ryoshi"}
 ]
 
 [L2GasPriceSuggester]
@@ -153,8 +153,8 @@ ProfilingEnabled = true
 
 [EventLog]
 	[EventLog.DB]
-	User = "royshi_event_user"
-	Password = "royshi_event_password"
+	User = "ryoshi_event_user"
+	Password = "ryoshi_event_password"
 	Name = "event_db"
 	Host = "ryoshi-event-db"
 	Port = "5432"
