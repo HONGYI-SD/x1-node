@@ -4,8 +4,8 @@ Outputs = ["stdout"]
 
 [SyncDB]
 Database = "postgres"
-User = "test_user"
-Password = "test_password"
+User = "royshi_test_user"
+Password = "royshi_test_password"
 Name = "test_db"
 Host = "ryoshi-bridge-db"
 Port = "5432"
@@ -44,8 +44,8 @@ BridgeVersion = "v1"
 SentinelConfigFilePath = "/app/sentinel_config.json"
     [BridgeServer.DB]
     Database = "postgres"
-    User = "test_user"
-    Password = "test_password"
+    User = "royshi_test_user"
+    Password = "royshi_test_password"
     Name = "test_db"
     Host = "ryoshi-bridge-db"
     Port = "5432"

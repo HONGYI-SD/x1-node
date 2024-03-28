@@ -6,8 +6,8 @@ Level = "debug"
 Outputs = ["stderr"]
 
 [StateDB]
-User = "state_user"
-Password = "state_password"
+User = "royshi_state_user"
+Password = "royshi_state_password"
 Name = "state_db"
 Host = "ryoshi-state-db"
 Port = "5432"
@@ -25,8 +25,8 @@ MinAllowedGasPriceInterval = "5m"
 PollMinAllowedGasPriceInterval = "15s"
 FreeGasAddress = "0xc7237086a6aadc966927e960bad7b15040992991"
 	[Pool.DB]
-	User = "pool_user"
-	Password = "pool_password"
+	User = "royshi_pool_user"
+	Password = "royshi_pool_password"
 	Name = "pool_db"
 	Host = "ryoshi-pool-db"
 	Port = "5432"
@@ -153,8 +153,8 @@ ProfilingEnabled = true
 
 [EventLog]
 	[EventLog.DB]
-	User = "event_user"
-	Password = "event_password"
+	User = "royshi_event_user"
+	Password = "royshi_event_password"
 	Name = "event_db"
 	Host = "ryoshi-event-db"
 	Port = "5432"
